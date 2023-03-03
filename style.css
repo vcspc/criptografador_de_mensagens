@@ -40,7 +40,6 @@ body {
     width: 6em;
     height: 2.2em;
     text-align: center;
-    align-self: center;
     background: #AD51C5;
     border-radius: 5px;
     font-family: 'Chakra Petch', sans-serif;
@@ -54,7 +53,7 @@ body {
     height: 2.2em;
     background: #7EE182;
     border-radius: 5px;
-    align-self: center;
+    text-align: center;
     font-family: 'Chakra Petch', sans-serif;
     font-size: 0.8em;
     color: #000000;
@@ -65,7 +64,7 @@ body {
 
     width: 5em;
     height: 2.2em;
-    align-self: center;
+    text-align: center;
     background: #7FCFE0;
     border-radius: 5px;
     font-family: 'Chakra Petch', sans-serif;
@@ -81,6 +80,8 @@ body {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 0.8em;
     color: #000000;
+    text-align: center;
+    
     }
 
 
