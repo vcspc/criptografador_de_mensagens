@@ -1,15 +1,20 @@
-class Message {
+function cryptography (){
+    let message = 0;
+    let result = 5;
+    let key = 145;
 
-    constructor(message, result, key){
-        this.message = message
-        this.result = result
-        this.key = key
+    return {
+        increment(){
+            message++;
+        },
+        getMessage(){
+            return message;
+        }
     }
-
-    get message (){
-        return this.message
-    }
-
 }
 
-
+const message1 = cryptography();
+message1.increment();
+message1.increment();
+message1.increment();
+console.log(message1.getMessage());
