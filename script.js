@@ -1,12 +1,14 @@
+let text = document.getElementById("input-message");
+
 function cryptography (){
-    let message = 0;
+    let message = text.value;
     let result = 5;
     let key = 145;
 
     return {
-        increment(){
+       /* increment(){
             message++;
-        },
+        },*/
         getMessage(){
             return message;
         }
@@ -14,7 +16,5 @@ function cryptography (){
 }
 
 const message1 = cryptography();
-message1.increment();
-message1.increment();
-message1.increment();
+
 console.log(message1.getMessage());
