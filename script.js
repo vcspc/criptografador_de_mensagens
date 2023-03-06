@@ -3,7 +3,7 @@ function start(){
     let buttonCode = document.querySelector('#button-code');
     let buttonDecode = document.querySelector('#button-decode');
     let buttonCopy = document.querySelector('#button-copy');
-        buttonCode.addEventListener('click', handButtonClickCode);
+        buttonCode.addEventListener('click',  handButtonClickCode);
         buttonDecode.addEventListener('click', handButtonClickDecode);
         buttonCopy.addEventListener('click', handButtonClickCopy);
         
@@ -86,18 +86,13 @@ function start(){
         alert('"' + copied + '"' + ' copiado');
     }
 
-    let key = [];
-
-    function captureKey (){
-
-    let key1 = document.querySelector('#key');
-    let key2 = key1.value
     
-    for(let cont; cont < key2.length; cont++){
-    key.push(key[cont])
-    }
+    var key = [];
 
+    for(var cont = 0; cont < 4; cont++){
+        let keyAux = parseInt(prompt("Digite 1 dos números da sua chave"));
+
+        key.push(keyAux);
     }
-    
 
 start();
