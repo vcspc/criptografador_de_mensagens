@@ -3,6 +3,8 @@ function start(){
     let buttonCode = document.querySelector('#button-code');
     let buttonDecode = document.querySelector('#button-decode');
     let buttonCopy = document.querySelector('#button-copy');
+    let buttonKey = document.querySelector('#button-key');
+        buttonKey.addEventListener('click', captureKey);
         buttonCode.addEventListener('click',  handButtonClickCode);
         buttonDecode.addEventListener('click', handButtonClickDecode);
         buttonCopy.addEventListener('click', handButtonClickCopy);
@@ -89,10 +91,19 @@ function start(){
     
     var key = [];
 
-    for(var cont = 0; cont < 4; cont++){
-        let keyAux = parseInt(prompt("Digite 1 dos números da sua chave"));
+    function captureKey (){
+    
+    key = [];
+
+    let key1 = document.querySelector('#key').value
+
+    for(var cont = 0; cont < 6; cont++){
+        let keyAux = parseInt(key1[cont]);
 
         key.push(keyAux);
+    }
+
+    console.log(key);
     }
 
 start();
